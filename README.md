@@ -1,4 +1,4 @@
-# KMP Gradle Skeleton 
+# KMP Native API Playground
 
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
