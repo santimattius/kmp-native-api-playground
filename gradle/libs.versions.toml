@@ -20,8 +20,10 @@ composeBom = "2024.05.00"
 bugsnag = "0.8.6"
 bugsnagAndroid = "5.32.2"
 bugsnagPlugin = "8.1.0"
+startupRuntime = "1.1.1"
 
 [libraries]
+androidx-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "startupRuntime" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -50,5 +52,5 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 cocoaPods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-#composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 bugsnagAndroid = { id = "com.bugsnag.android.gradle", version.ref = "bugsnagPlugin" }
+#composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

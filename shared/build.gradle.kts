@@ -57,7 +57,7 @@ kotlin {
 
         androidMain.dependencies {
             api(libs.bugsnag.android)
-            implementation("androidx.startup:startup-runtime:1.1.1")
+            implementation(libs.androidx.startup.runtime)
         }
 
 

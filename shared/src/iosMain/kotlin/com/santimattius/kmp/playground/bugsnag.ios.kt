@@ -10,7 +10,7 @@ actual typealias Configuration = BugsnagConfiguration
 actual typealias TrackableException = NSException
 
 @OptIn(ExperimentalForeignApi::class)
-actual class TrackerProvider {
+internal actual class PlatformTracker {
     actual fun initialize(config: Configuration) {
         Bugsnag.startWithConfiguration(config)
     }

@@ -3,11 +3,9 @@ package com.santimattius.kmp.playground
 expect class Configuration
 expect class TrackableException
 
-object CrashTracker {
+object Bugsnag {
 
-    private val provider: TrackerProvider by lazy {
-        TrackerProvider()
-    }
+    private val provider: PlatformTracker = PlatformTracker()
 
     fun initialize(config: Configuration) {
         provider.initialize(config)
@@ -18,7 +16,7 @@ object CrashTracker {
     }
 }
 
-expect class TrackerProvider(){
+internal expect class PlatformTracker(){
     fun initialize(config: Configuration)
     fun track(exception: TrackableException)
 }

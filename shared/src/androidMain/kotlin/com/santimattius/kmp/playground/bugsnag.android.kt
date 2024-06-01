@@ -7,7 +7,7 @@ actual typealias Configuration = BugsnagConfiguration
 
 actual typealias TrackableException = Throwable
 
-actual class TrackerProvider {
+internal actual class PlatformTracker {
     actual fun initialize(config: Configuration) {
         val context = applicationContext ?: run {
             // TODO: add logging later
