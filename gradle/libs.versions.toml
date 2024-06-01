@@ -1,6 +1,6 @@
 [versions]
 agp = "8.4.1"
-kotlin = "2.0.0"
+kotlin = "1.9.24"
 
 composeCompiler = "1.5.13"
 android-compileSdk = "34"
@@ -16,6 +16,10 @@ androidx-activityCompose = "1.9.0"
 junit = "4.13.2"
 lifecycleRuntimeKtx = "2.8.1"
 composeBom = "2024.05.00"
+
+bugsnag = "0.8.6"
+bugsnagAndroid = "5.32.2"
+bugsnagPlugin = "8.1.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -38,9 +42,13 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 
+bugsnag-android = { module = "com.bugsnag:bugsnag-android", version.ref = "bugsnagAndroid" }
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+cocoaPods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+#composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+bugsnagAndroid = { id = "com.bugsnag.android.gradle", version.ref = "bugsnagPlugin" }

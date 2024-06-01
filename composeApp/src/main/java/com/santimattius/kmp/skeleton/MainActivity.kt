@@ -1,6 +1,6 @@
 package com.santimattius.kmp.skeleton
 
-import Greeting
+import com.santimattius.kmp.playground.Greeting
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
