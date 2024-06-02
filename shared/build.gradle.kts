@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.cocoaPods)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.bugsnagAndroid)
+    alias(libs.plugins.skie)
 }
 
 kotlin {
@@ -34,7 +35,6 @@ kotlin {
         framework {
             baseName = "Shared"
             isStatic = false
-            transitiveExport = false // This is default.
         }
 
         pod("Bugsnag"){

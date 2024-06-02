@@ -1,6 +1,7 @@
 [versions]
 agp = "8.4.1"
 kotlin = "1.9.24"
+skieVersion = "0.8.0"
 
 composeCompiler = "1.5.13"
 android-compileSdk = "34"
@@ -52,5 +53,6 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 cocoaPods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+skie = { id = "co.touchlab.skie", version.ref = "skieVersion" }
 bugsnagAndroid = { id = "com.bugsnag.android.gradle", version.ref = "bugsnagPlugin" }
 #composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
