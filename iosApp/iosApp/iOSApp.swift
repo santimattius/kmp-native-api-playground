@@ -7,7 +7,7 @@ struct iOSApp: App {
     
     init() {
         // Initialization
-         let config = Configuration.loadConfig()
+         let config = BugsnagConfiguration.loadConfig()
                config.appVersion = "1.0.0-alpha"
 
          Bugsnag.shared.initialize(config: config)
