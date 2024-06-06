@@ -51,11 +51,12 @@ kotlin {
         }
         val commonMain by getting {
             dependencies {
-
+                implementation(libs.kotlinx.coroutines.core)
             }
         }
 
         androidMain.dependencies {
+            implementation(libs.kotlinx.coroutines.android)
             api(libs.bugsnag.android)
             implementation(libs.androidx.startup.runtime)
         }

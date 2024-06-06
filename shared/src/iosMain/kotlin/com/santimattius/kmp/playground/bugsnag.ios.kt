@@ -9,6 +9,12 @@ import platform.Foundation.NSException
 actual typealias Configuration = BugsnagConfiguration
 actual typealias TrackableException = NSException
 
+actual fun Throwable.asTrackableException() = NSException.exceptionWithName(
+    name = this::class.simpleName,
+    reason = message ?: toString(),
+    userInfo = null
+)
+
 @OptIn(ExperimentalForeignApi::class)
 internal actual class PlatformTracker {
     actual fun initialize(config: Configuration) {

@@ -3,6 +3,8 @@ package com.santimattius.kmp.playground
 expect class Configuration
 expect class TrackableException
 
+expect fun Throwable.asTrackableException(): TrackableException
+
 object Bugsnag {
 
     private val provider: PlatformTracker = PlatformTracker()
