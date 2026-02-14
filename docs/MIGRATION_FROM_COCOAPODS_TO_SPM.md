@@ -15,6 +15,7 @@ and SwiftPM instead of CocoaPods for the shared framework and its dependencies.
 3. [Step 2 — Migrate framework configuration to the binaries API](#step-2--migrate-framework-configuration-to-the-binaries-api)
 4. [Step 3 — Migrate CocoaPods API usage to SwiftPM-imported APIs](#step-3--migrate-cocoapods-api-usage-to-swiftpm-imported-apis)
 5. [Step 4 — Reconfigure Xcode for direct integration](#step-4--reconfigure-xcode-for-direct-integration)
+   - [If you see: "SwiftPM dependencies with embedAndSign integration"](#if-you-see-swiftpm-dependencies-with-embedandsign-integration)
 6. [Step 5 — Disable CocoaPods in the iOS app](#step-5--disable-cocoapods-in-the-ios-app)
 7. [Step 6 — Remove the CocoaPods plugin from the build](#step-6--remove-the-cocoapods-plugin-from-the-build)
 8. [Verification](#verification)
@@ -177,6 +178,28 @@ indicated). It will:
 
 You only need to run this once. Do **not** add the `integrateLinkagePackage` task to your Xcode
 target’s build phases.
+
+### If you see: "SwiftPM dependencies with embedAndSign integration"
+
+When your Xcode project uses **SwiftPM dependencies** (e.g. in `swiftPMDependencies`) together with
+the **embedAndSignAppleFrameworkForXcode** integration, the build may fail with:
+
+```text
+error: You have SwiftPM dependencies with embedAndSign integration.
+error: Please integrate with synthetic import linkage project by
+error: running the following command:
+error: XCODEPROJ_PATH='.../iosApp/iosApp.xcodeproj' '.../gradlew' -p '...' ':shared:integrateLinkagePackage' -i
+```
+
+**Fix:** Run the command exactly as shown in the error (from your project root). For example:
+
+```bash
+XCODEPROJ_PATH='/path/to/your-project/iosApp/iosApp.xcodeproj' ./gradlew -p '/path/to/your-project' ':shared:integrateLinkagePackage' -i
+```
+
+This one-time step adds the synthetic import linkage to your `.xcodeproj` so SwiftPM dependencies
+are correctly linked into the app. After it succeeds, build again from Xcode; the error should be
+resolved.
 
 ---
 

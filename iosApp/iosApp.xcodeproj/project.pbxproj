@@ -7,98 +7,141 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
-		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
-		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		6E8F1F0F16B60C3D14393A3E /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF60BA2243E2BC39B5DEE7C /* Pods_iosApp.framework */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		058557BB273AAA24004C7B11 = {
+			isa = PBXBuildFile;
+			fileRef = 058557BA273AAA24004C7B11;
+		};
+		058557D9273AAEEB004C7B11 = {
+			isa = PBXBuildFile;
+			fileRef = 058557D8273AAEEB004C7B11;
+		};
+		194C1C851A7F9EBB4EF027C5 = {
+			isa = PBXBuildFile;
+			productRef = 183A55E228AA6D3AD47B99E4;
+		};
+		2152FB042600AC8F00CF470E = {
+			isa = PBXBuildFile;
+			fileRef = 2152FB032600AC8F00CF470E;
+		};
+		4B153A792F4106050079E132 = {
+			isa = PBXBuildFile;
+			productRef = 4B153A782F4106050079E132;
+		};
+		7555FF83242A565900829871 = {
+			isa = PBXBuildFile;
+			fileRef = 7555FF82242A565900829871;
+		};
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1A5F5FF43924DE541ACC51B6 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
-		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		3CF60BA2243E2BC39B5DEE7C /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68FDE13F9916FBB22C254212 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
-		7555FF7B242A565900829871 /* kmp-gradle-skeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kmp-gradle-skeleton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB3632DC29227652001CCB65 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		058557BA273AAA24004C7B11 = {
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			path = Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		058557D8273AAEEB004C7B11 = {
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			path = "Preview Assets.xcassets";
+			sourceTree = "<group>";
+		};
+		2152FB032600AC8F00CF470E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = iOSApp.swift;
+			sourceTree = "<group>";
+		};
+		7555FF7B242A565900829871 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = "kmp-gradle-skeleton.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7555FF82242A565900829871 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = ContentView.swift;
+			sourceTree = "<group>";
+		};
+		7555FF8C242A565B00829871 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		AB3632DC29227652001CCB65 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = text.xcconfig;
+			path = Config.xcconfig;
+			sourceTree = "<group>";
+		};
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3720464A3098E2FA409E2EE0 /* Frameworks */ = {
+		3720464A3098E2FA409E2EE0 = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E8F1F0F16B60C3D14393A3E /* Pods_iosApp.framework in Frameworks */,
+				4B153A792F4106050079E132,
+				194C1C851A7F9EBB4EF027C5,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		058557D7273AAEEB004C7B11 /* Preview Content */ = {
+		058557D7273AAEEB004C7B11 = {
 			isa = PBXGroup;
 			children = (
-				058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */,
+				058557D8273AAEEB004C7B11,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		42799AB246E5F90AF97AA0EF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3CF60BA2243E2BC39B5DEE7C /* Pods_iosApp.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
-				AB1DB47929225F7C00F7AF9C /* Configuration */,
-				7555FF7D242A565900829871 /* iosApp */,
-				7555FF7C242A565900829871 /* Products */,
-				42799AB246E5F90AF97AA0EF /* Frameworks */,
-				BCBD5739F7CFE50A9C0B985B /* Pods */,
+				AB1DB47929225F7C00F7AF9C,
+				7555FF7D242A565900829871,
+				7555FF7C242A565900829871,
+				BCBD5739F7CFE50A9C0B985B,
 			);
 			sourceTree = "<group>";
 		};
-		7555FF7C242A565900829871 /* Products */ = {
+		7555FF7C242A565900829871 = {
 			isa = PBXGroup;
 			children = (
-				7555FF7B242A565900829871 /* kmp-gradle-skeleton.app */,
+				7555FF7B242A565900829871,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7555FF7D242A565900829871 /* iosApp */ = {
+		7555FF7D242A565900829871 = {
 			isa = PBXGroup;
 			children = (
-				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
-				7555FF8C242A565B00829871 /* Info.plist */,
-				2152FB032600AC8F00CF470E /* iOSApp.swift */,
-				058557D7273AAEEB004C7B11 /* Preview Content */,
+				058557BA273AAA24004C7B11,
+				7555FF82242A565900829871,
+				7555FF8C242A565B00829871,
+				2152FB032600AC8F00CF470E,
+				058557D7273AAEEB004C7B11,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
 		};
-		AB1DB47929225F7C00F7AF9C /* Configuration */ = {
+		AB1DB47929225F7C00F7AF9C = {
 			isa = PBXGroup;
 			children = (
-				AB3632DC29227652001CCB65 /* Config.xcconfig */,
+				AB3632DC29227652001CCB65,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		BCBD5739F7CFE50A9C0B985B /* Pods */ = {
+		BCBD5739F7CFE50A9C0B985B = {
 			isa = PBXGroup;
 			children = (
-				1A5F5FF43924DE541ACC51B6 /* Pods-iosApp.debug.xcconfig */,
-				68FDE13F9916FBB22C254212 /* Pods-iosApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -106,30 +149,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7555FF7A242A565900829871 /* iosApp */ = {
+		7555FF7A242A565900829871 = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildConfigurationList = 7555FFA5242A565B00829871;
 			buildPhases = (
-				614ED6A3F1CF242F31BD8BEC /* [CP] Check Pods Manifest.lock */,
-				F36B1CEA2AD836FC00CB74D5 /* Compile Kotlin */,
-				7555FF77242A565900829871 /* Sources */,
-				7555FF79242A565900829871 /* Resources */,
-				3720464A3098E2FA409E2EE0 /* Frameworks */,
-				23A2F55D590BA5006BB8FC60 /* [CP] Embed Pods Frameworks */,
+				F36B1CEA2AD836FC00CB74D5,
+				7555FF77242A565900829871,
+				7555FF79242A565900829871,
+				3720464A3098E2FA409E2EE0,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iosApp;
+			packageProductDependencies = (
+				183A55E228AA6D3AD47B99E4,
+			);
 			productName = iosApp;
-			productReference = 7555FF7B242A565900829871 /* kmp-gradle-skeleton.app */;
+			productReference = 7555FF7B242A565900829871;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7555FF73242A565900829871 /* Project object */ = {
+		7555FF73242A565900829871 = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
@@ -141,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */;
+			buildConfigurationList = 7555FF76242A565900829871;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,68 +194,33 @@
 				Base,
 			);
 			mainGroup = 7555FF72242A565900829871;
-			productRefGroup = 7555FF7C242A565900829871 /* Products */;
+			packageReferences = (
+				4B153A772F4106050079E132,
+				C47C2BCC9524679FB6BCE792,
+			);
+			productRefGroup = 7555FF7C242A565900829871;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7555FF7A242A565900829871 /* iosApp */,
+				7555FF7A242A565900829871,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7555FF79242A565900829871 /* Resources */ = {
+		7555FF79242A565900829871 = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
-				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+				058557D9273AAEEB004C7B11,
+				058557BB273AAA24004C7B11,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23A2F55D590BA5006BB8FC60 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		614ED6A3F1CF242F31BD8BEC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iosApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F36B1CEA2AD836FC00CB74D5 /* Compile Kotlin */ = {
+		F36B1CEA2AD836FC00CB74D5 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +241,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7555FF77242A565900829871 /* Sources */ = {
+		7555FF77242A565900829871 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				2152FB042600AC8F00CF470E,
+				7555FF83242A565900829871,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7555FFA3242A565B00829871 /* Debug */ = {
+		7555FFA3242A565B00829871 = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB3632DC29227652001CCB65 /* Config.xcconfig */;
+			baseConfigurationReference = AB3632DC29227652001CCB65;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -306,9 +315,9 @@
 			};
 			name = Debug;
 		};
-		7555FFA4242A565B00829871 /* Release */ = {
+		7555FFA4242A565B00829871 = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB3632DC29227652001CCB65 /* Config.xcconfig */;
+			baseConfigurationReference = AB3632DC29227652001CCB65;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -362,9 +371,8 @@
 			};
 			name = Release;
 		};
-		7555FFA6242A565B00829871 /* Debug */ = {
+		7555FFA6242A565B00829871 = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A5F5FF43924DE541ACC51B6 /* Pods-iosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -395,9 +403,8 @@
 			};
 			name = Debug;
 		};
-		7555FFA7242A565B00829871 /* Release */ = {
+		7555FFA7242A565B00829871 = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68FDE13F9916FBB22C254212 /* Pods-iosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -431,25 +438,55 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */ = {
+		7555FF76242A565900829871 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7555FFA3242A565B00829871 /* Debug */,
-				7555FFA4242A565B00829871 /* Release */,
+				7555FFA3242A565B00829871,
+				7555FFA4242A565B00829871,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */ = {
+		7555FFA5242A565B00829871 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7555FFA6242A565B00829871 /* Debug */,
-				7555FFA7242A565B00829871 /* Release */,
+				7555FFA6242A565B00829871,
+				7555FFA7242A565B00829871,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C47C2BCC9524679FB6BCE792 = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = _internal_linkage_SwiftPMImport;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B153A772F4106050079E132 = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bugsnag/bugsnag-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.35.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		183A55E228AA6D3AD47B99E4 = {
+			isa = XCSwiftPackageProductDependency;
+			productName = _internal_linkage_SwiftPMImport;
+		};
+		4B153A782F4106050079E132 = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B153A772F4106050079E132;
+			productName = Bugsnag;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 7555FF73242A565900829871 /* Project object */;
+	rootObject = 7555FF73242A565900829871;
 }

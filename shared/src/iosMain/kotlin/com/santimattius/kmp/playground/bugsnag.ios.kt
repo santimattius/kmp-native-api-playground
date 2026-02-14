@@ -1,9 +1,8 @@
 package com.santimattius.kmp.playground
 
-import cocoapods.Bugsnag.Bugsnag
-import cocoapods.Bugsnag.BugsnagConfiguration
 import kotlinx.cinterop.ExperimentalForeignApi
 import platform.Foundation.NSException
+import swiftPMImport.kmp.native.api.playground.shared.BugsnagConfiguration
 
 /** iOS actual: [Configuration] is CocoaPods Bugsnag [BugsnagConfiguration]. */
 @OptIn(ExperimentalForeignApi::class)
@@ -23,10 +22,10 @@ actual fun Throwable.asTrackableException() = NSException.exceptionWithName(
 @OptIn(ExperimentalForeignApi::class)
 internal actual class PlatformTracker {
     actual fun initialize(config: Configuration) {
-        Bugsnag.startWithConfiguration(config)
+        Bugsnag.initialize(config)
     }
 
     actual fun track(exception: TrackableException) {
-        Bugsnag.notify(exception)
+        Bugsnag.track(exception)
     }
 }
