@@ -7,9 +7,20 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 
+/**
+ * Example repository that triggers exceptions and reports them via [Bugsnag].
+ * Demonstrates using the shared [Bugsnag.track] and [Throwable.asTrackableException] API
+ * from common code with a [CoroutineExceptionHandler].
+ */
 class CrashRepository {
 
     private val coroutineScope = CoroutineScope(Dispatchers.Default)
+
+    /**
+     * Launches coroutines that throw; uncaught exceptions are reported to Bugsnag
+     * via the installed [CoroutineExceptionHandler].
+     * For demonstration only; do not use as a pattern for production error handling.
+     */
     suspend fun crash() {
         val handler = CoroutineExceptionHandler { _, exception ->
             println("CoroutineExceptionHandler got $exception")

@@ -1,29 +1,29 @@
 [versions]
-agp = "8.4.1"
-kotlin = "1.9.24"
-skieVersion = "0.8.0"
+agp = "8.10.0"
+kotlin = "2.3.10"
+skieVersion = "0.10.10"
 
-composeCompiler = "1.5.13"
-android-compileSdk = "34"
+# Compose: desde Kotlin 2.0 el compiler va en el plugin de Kotlin (misma versión)
+android-compileSdk = "36"
 android-minSdk = "24"
-android-targetSdk = "34"
+android-targetSdk = "36"
 
-androidx-appcompat = "1.7.0"
-androidx-core-ktx = "1.13.1"
-androidx-material = "1.12.0"
+androidx-appcompat = "1.7.1"
+androidx-core-ktx = "1.17.0"
+androidx-material = "1.13.0"
 
-androidx-activityCompose = "1.9.0"
+androidx-activityCompose = "1.12.4"
 
 junit = "4.13.2"
-lifecycleRuntimeKtx = "2.8.1"
-composeBom = "2024.05.00"
+lifecycleRuntimeKtx = "2.10.0"
+composeBom = "2026.02.00"
 
 bugsnag = "0.8.6"
-bugsnagAndroid = "5.32.2"
-bugsnagPlugin = "8.1.0"
-startupRuntime = "1.1.1"
+bugsnagAndroid = "6.24.0"
+bugsnagPlugin = "8.2.0"
+startupRuntime = "1.2.0"
 
-kotlinxCoroutines = "1.8.1"
+kotlinxCoroutines = "1.10.2"
 
 [libraries]
 androidx-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "startupRuntime" }
@@ -58,9 +58,10 @@ kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-t
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+androidKotlinMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 cocoaPods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 skie = { id = "co.touchlab.skie", version.ref = "skieVersion" }
 bugsnagAndroid = { id = "com.bugsnag.android.gradle", version.ref = "bugsnagPlugin" }
-#composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

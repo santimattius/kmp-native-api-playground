@@ -1,7 +1,11 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-//    alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.composeCompiler)
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 android {
@@ -29,26 +33,16 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget =  JavaVersion.VERSION_1_8.toString()
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures {
         compose = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
-    }
 }
 
-//composeCompiler {
-//    enableStrongSkippingMode = true
-//    reportsDestination = layout.buildDirectory.dir("compose_compiler")
-//}
-
+// Strong skipping está habilitado por defecto en Kotlin 2.0 Compose Compiler
 
 dependencies {
     implementation(projects.shared)
