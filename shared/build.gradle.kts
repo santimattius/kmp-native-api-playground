@@ -3,9 +3,9 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidKotlinMultiplatformLibrary)
-    alias(libs.plugins.cocoaPods)
+//    alias(libs.plugins.cocoaPods)
     alias(libs.plugins.bugsnagAndroid)
-    alias(libs.plugins.skie)
+    //alias(libs.plugins.skie)
 }
 
 kotlin {
@@ -21,28 +21,26 @@ kotlin {
         withJava()
     }
 
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
-
-    cocoapods {
-        version = "1.0"
-        summary = "Some description for a Kotlin/Native module"
-        homepage = "Link to a Kotlin/Native module homepage"
-        name = "Shared"
-        ios.deploymentTarget = "14.0"
-
-        framework {
+    listOf(
+        iosArm64(),
+        iosSimulatorArm64(),
+        iosX64(),
+    ).forEach { iosTarget ->
+        iosTarget.binaries.framework {
             baseName = "Shared"
-            isStatic = false
+            isStatic = true
         }
-
-        pod("Bugsnag") {
-            version = "6.32.2"
-        }
-
-        xcodeConfigurationToNativeBuildType["CUSTOM_DEBUG"] = NativeBuildType.DEBUG
-        xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] = NativeBuildType.RELEASE
+    }
+    swiftPMDependencies {
+        xcodeProjectPathForKmpIJPlugin.set(
+            // Specify path to the xcodeproj with :embedAndSignAppleFrameworkForXcode integration in this parameter
+            layout.projectDirectory.file("../iosApp/iosApp.xcodeproj")
+        )
+        `package`(
+            url = url("https://github.com/bugsnag/bugsnag-cocoa.git"),
+            version = from("6.35.0"),
+            products = listOf(product("Bugsnag")),
+        )
     }
 
     sourceSets {

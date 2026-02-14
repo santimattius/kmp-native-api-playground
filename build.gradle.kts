@@ -11,3 +11,9 @@ plugins {
     alias(libs.plugins.skie) apply false
     alias(libs.plugins.composeCompiler) apply false
 }
+
+buildscript {
+    dependencies.constraints {
+        "classpath"("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.21-titan-211!!")
+    }
+}
